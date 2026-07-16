@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://miso037.github.io/personal_page/sitemap.xml
+Sitemap: https://michalkasarda.github.io/sitemap.xml
