@@ -2,16 +2,16 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: PhD student, <a href='https://cyber.felk.cvut.cz/research/groups-teams/vras/'>VRAS Group</a>, FEE, <a href='https://www.cvut.cz/en'>Czech Technical University in Prague</a>.
 
 profile:
   align: right
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>Karlovo náměstí 13</p>
+    <p>121 35 Prague 2</p>
+    <p>Czech Republic</p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
@@ -22,13 +22,17 @@ announcements:
   limit: 5 # leave blank to include all the news in the `_news` folder
 
 latest_posts:
-  enabled: true
-  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
-  limit: 3 # leave blank to include all the blog posts
+  enabled: false
+  scrollable: true
+  limit: 3
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](https://www.reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I am a PhD student in the [Vision for Robotics and Autonomous Systems (VRAS)](https://cyber.felk.cvut.cz/research/groups-teams/vras/) group at the Faculty of Electrical Engineering, Czech Technical University in Prague. I joined the group in June 2024 after completing my MSc in Robotics and Cybernetics at the same faculty (graduated with honors, 2025), with a Dean's Award for my diploma thesis.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+My research focuses on **deep learning for UAV command and control**, specifically on **wind estimation in close proximity to terrain** for UAV planning. I work within the **Kolibriq** project, a collaboration with **Lockheed Martin**. Concretely, I develop real-time neural approximations of CFD solvers for high-resolution wind field prediction and combine them with differentiable UAV dynamics for planning and optimization in predicted wind fields.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+Starting September 2026, I will also contribute as a research engineer to **SLAAP — Sloshing AI Approximator**, an ESA **FIRST!** activity under FLPP, led by **OHB System** with CTU Prague and OHB Hellas. On the CTU side, I work on data-driven sloshing surrogate models aimed at replacing CFD in Monte-Carlo validation campaigns for spacecraft AOCS design.
+
+Before starting my PhD I worked as an undergraduate researcher in the [Intelligent Mobile Robotics (IMR)](https://imr.ciirc.cvut.cz/) group at CIIRC, on visual teach-and-repeat navigation using deep-learned local features.
+
+If you would like to chat about wind prediction, UAV planning, CFD surrogates, or visual navigation, feel free to drop me an email.

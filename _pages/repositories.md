@@ -2,46 +2,59 @@
 layout: page
 permalink: /repositories/
 title: repositories
-description: Edit the `_data/repositories.yml` and change the `github_users` and `github_repos` lists to include your own GitHub profile and repositories.
+description: Selected public code repositories hosted on the FEE CTU GitLab.
 nav: true
 nav_order: 4
 ---
 
-{% if site.data.repositories.github_users %}
+<div class="row row-cols-1 row-cols-md-2 g-3">
 
-## GitHub users
-
-<div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
-  {% for user in site.data.repositories.github_users %}
-    {% include repository/repo_user.liquid username=user %}
-  {% endfor %}
-</div>
-
----
-
-{% if site.repo_trophies.enabled %}
-{% for user in site.data.repositories.github_users %}
-{% if site.data.repositories.github_users.size > 1 %}
-
-  <h4>{{ user }}</h4>
-  {% endif %}
-  <div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
-  {% include repository/repo_trophies.liquid username=user %}
+  <div class="col">
+    <div class="card h-100">
+      <div class="card-body">
+        <h5 class="card-title">
+          <i class="fa-brands fa-gitlab"></i>
+          <a href="https://gitlab.fel.cvut.cz/kasarmic/windoptimizer" target="_blank" rel="noopener">windoptimizer</a>
+        </h5>
+        <p class="card-text">Optimization of UAV planning in predicted wind fields using a differentiable UAV model.</p>
+      </div>
+    </div>
   </div>
 
----
+  <div class="col">
+    <div class="card h-100">
+      <div class="card-body">
+        <h5 class="card-title">
+          <i class="fa-brands fa-gitlab"></i>
+          <a href="https://gitlab.fel.cvut.cz/kasarmic/wind_around_buildings" target="_blank" rel="noopener">windpredictor</a>
+        </h5>
+        <p class="card-text">Deep learning model for high-resolution volumetric wind prediction around terrain and buildings.</p>
+      </div>
+    </div>
+  </div>
 
-{% endfor %}
-{% endif %}
-{% endif %}
+  <div class="col">
+    <div class="card h-100">
+      <div class="card-body">
+        <h5 class="card-title">
+          <i class="fa-brands fa-gitlab"></i>
+          <a href="https://gitlab.fel.cvut.cz/kasarmic/flowsysid" target="_blank" rel="noopener">FlowSysId</a>
+        </h5>
+        <p class="card-text">Experiments related to system identification of flow / UAV dynamics.</p>
+      </div>
+    </div>
+  </div>
 
-{% if site.data.repositories.github_repos %}
+  <div class="col">
+    <div class="card h-100">
+      <div class="card-body">
+        <h5 class="card-title">
+          <i class="fa-brands fa-gitlab"></i>
+          <a href="https://gitlab.fel.cvut.cz/kasarmic/beyond-normal-distributions-lecture-notes" target="_blank" rel="noopener">Beyond Normal Distributions — Lecture Notes</a>
+        </h5>
+        <p class="card-text">Lecture notes and notebooks exploring probability distributions beyond the Gaussian assumption.</p>
+      </div>
+    </div>
+  </div>
 
-## GitHub Repositories
-
-<div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
-  {% for repo in site.data.repositories.github_repos %}
-    {% include repository/repo.liquid repository=repo %}
-  {% endfor %}
 </div>
-{% endif %}
