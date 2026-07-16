@@ -119,5 +119,5 @@ Deep Learning · PyTorch · Python · C++ · C · Computational Fluid Dynamics (
 
 Once the personal page is deployed, add a Featured link:
 - **Title:** Personal website
-- **URL:** https://miso037.github.io/personal_page/
+- **URL:** https://michalkasarda.github.io/
 - **Caption:** Publications, projects, and CV.
